@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class main
+{
+    public static void main(String[] args) {
+        Scanner z=new Scanner(System.in);
+        int s,e,c;
+        s=z.nextInt();
+        e=z.nextInt();
+        for(int i=s;i<=e;++i) 
+        {
+            c=0; 
+            for(int j=2;j<=Math.sqrt(i);++j) 
+            {
+                if(i%j==0)
+                {
+                    c=1;
+                    break;
+                }
+            }
+            if(c==0)
+            {
+                System.out.println(i);
+            }
+        }   
+    }
+}

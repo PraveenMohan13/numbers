@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class main
+{
+    public static void main(String[] args) {
+        Scanner z=new Scanner(System.in);
+        int n,r,sum=0;
+        n=z.nextInt(); //8885
+        while(n>9)
+        {
+            while(n!=0)
+            {
+                r=n%10;
+                sum=sum+r;
+                n=n/10;
+            }
+            n=sum;
+            sum=0;
+        }
+        System.out.print(n);
+    }
+}

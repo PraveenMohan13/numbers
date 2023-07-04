@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+class main
+{
+    public static void main(String[] args) {
+        Scanner z=new Scanner(System.in);
+        int n,ans=0,r=0;
+        n=z.nextInt();  //12345
+    int c=(int)floor(log10(n))+1;
+    int half=(c/2);//+1;
+    int t_half=half;
+    while(half>0)
+    {
+        r=n%10;
+        ans=ans*10+r;
+        half--;
+        n=n/10;
+    }
+    int fans=(int)(n*Math.pow(10,t_half)+ans);
+        System.out.print(fans);
+    }
+}

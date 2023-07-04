@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class main
+{
+    public static void main(String[] args) {
+        Scanner z=new Scanner(System.in);
+        int n,r,ans=0,copy;
+        n=z.nextInt();
+        copy=n;
+        while(n>0)
+        {
+           r=n%10;
+            ans=ans*10+r;
+            n=n/10;
+        } 
+        if(copy==ans)
+            System.out.print("palindrome");
+        else
+            System.out.print("not a Palindrome");
+        
+    }
+}

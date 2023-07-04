@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class main
+{
+    public static void main(String[] args) {
+        Scanner z=new Scanner(System.in);
+        int n,c=0,sum=0;
+        n=z.nextInt();
+        while(n>0)
+        {
+            int r=n%10;
+            c=0; 
+            for(int j=2;j<=Math.sqrt(r);++j) 
+            {
+                if(r%j==0)
+                {
+                    c=1;
+                    break;
+                }
+            }
+            if(c==0)
+            {
+                sum=sum+r;
+            }
+            n=n/10;
+        } 
+        System.out.print(sum);
+    }
+}

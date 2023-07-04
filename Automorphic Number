@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class main
+{
+    public static void main(String[] args) {
+        Scanner z=new Scanner(System.in);
+        
+        int a,b,flag=0,x,y;
+        a=z.nextInt();
+        b=a*a;
+        while(a!=0 && b!=0)
+        {
+            x=a%10;
+            y=b%10;
+            if(x!=y)
+            {
+                flag=1;
+                break;
+            }
+            a=a/10;
+            b=b/10;
+        
+        }
+        if (flag==0)
+            System.out.print("Automorphic Number");
+        else
+            System.out.print("Not an Automorphic Number");
+    
+    }
+}

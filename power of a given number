@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class main
+{
+    public static void main(String[] args) {
+        Scanner z=new Scanner(System.in);
+        int n,e,ans=1;
+        n=z.nextInt();
+        e=z.nextInt();
+        while(e>0)
+        {
+          ans=ans*n;
+            e--;
+        } 
+        System.out.print(ans);   
+    }
+}

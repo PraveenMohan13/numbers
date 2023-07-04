@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class main
+{
+    public static void main(String[] args) {
+        Scanner z=new Scanner(System.in);
+        int n,fact=1;
+        n=z.nextInt();
+        while(n>0)
+        {
+        fact=fact*n;
+            n--;
+        } 
+        System.out.print(fact);   
+    }
+}

@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class main
+{
+    public static void main(String[] args) {
+        Scanner z=new Scanner(System.in);
+        int n=1000,i=0,r,ans=0;
+        while(n>0)
+        {
+            r=n%10;
+            n=n/10;
+            ans=(int)(ans+r*Math.pow(2,i));
+            i++;
+    }
+    System.out.print(ans);
+    }
+}

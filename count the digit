@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner z=new Scanner(System.in);
+        int n,c=0;
+        n=z.nextInt();
+        while(n>0)
+        {
+            n=n/10;
+            c++;
+        }
+        System.out.print(c);
+    }
+}

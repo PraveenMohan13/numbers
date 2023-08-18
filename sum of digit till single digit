@@ -1,3 +1,27 @@
+#include <stdio.h>
+int fun(int n)
+{
+    int ans=0;
+    while(n>9)
+    { 
+        while(n>0)
+        {
+            int r=n%10;
+            ans=ans+r;
+            n=n/10;
+        }
+        n=ans;
+        ans=0;
+    }
+    printf("%d",n);
+}
+int main() {
+     int n;
+     scanf("%d",&n);
+     fun(n);
+}
+===========================================================================================
+
 import java.util.Scanner;
 class main
 {

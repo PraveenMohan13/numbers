@@ -1,3 +1,36 @@
+#include<stdio.h>
+void func(int n)
+{
+    int s,a,b,c;
+    int f=0;
+    s =n*n;
+    while(n)
+    {
+        a = n%10;
+        b = s%10;
+        n=n/10;
+        s=s/10;
+        if(a!=b)
+        {
+            f=1;
+            break;
+        }
+    }
+    if(f==0)
+    printf("s");
+    else
+    printf("no");
+    }
+    void main()
+    {
+        int n;
+        scanf("%d",&n);
+        func(n);
+        
+    }
+
+===============================================================================
+
 import java.util.Scanner;
 class main
 {

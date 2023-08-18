@@ -1,3 +1,29 @@
+#include <stdio.h>
+int fun(int n)
+{
+    int ans=0;
+    while(n>0)
+    {
+        int r=n%10;
+        ans=ans*10+r;
+        n=n/10;
+    }
+    return ans;
+}
+int main() 
+{
+     int n,ans;
+     scanf("%d",&n);
+     ans=fun(n);
+     if(ans==n)
+        printf("palindrome");
+    else
+        printf("not a palindrome");
+}
+
+=============================================================================================
+
+
 import java.util.Scanner;
 class main
 {

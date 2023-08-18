@@ -1,3 +1,30 @@
+c
+#include <stdio.h>
+void fun(int s,int e)
+{
+    int c=0,i,j;
+    for(i=s;i<=e;i++)
+    {
+        c=0;
+        for(j=2;j<=sqrt(i);j++)
+        {
+            if(i%j==0)
+            {
+                c++;
+                break;
+            }
+        }
+            if(c==0)
+                printf("%d ",i);
+    }
+}
+int main() {
+    int s,e;
+    scanf("%d%d",&s,&e);
+    fun(s,e);
+}
+---------------------------------------------------------------------------------------------------------------------------------
+java
 import java.util.Scanner;
 class main
 {

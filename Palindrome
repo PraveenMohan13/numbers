@@ -1,3 +1,27 @@
+public class Main {
+  public static int rev(int n)
+  {
+    int ans=0;
+    while(n!=0)
+    {
+      ans=ans*10+n%10;
+      n=n/10;
+    }
+    return ans;
+  }
+  
+    public static void main(String[] args) {
+      Scanner z=new Scanner(System.in);
+     int n=z.nextInt();
+      if(n==rev(n))
+        System.out.print("Palindrome");
+      else
+        System.out.print("No");
+        
+      
+  }
+}
+==================================================================================
 #include <stdio.h>
 int fun(int n)
 {

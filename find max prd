@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+      Scanner z = new Scanner(System.in);
+        int n=z.nextInt();
+      int ans=1;
+      while(n>4)
+      {
+        ans *= 3;
+        n -= 3;
+        System.out.print(3+"*");
+      }
+      ans *= n;
+      System.out.println(n);
+      System.out.print(ans);
+    }
+}
